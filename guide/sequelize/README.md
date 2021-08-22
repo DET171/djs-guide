@@ -246,7 +246,7 @@ const tagString = tagList.map(t => t.name).join(', ') || 'No tags set.';
 return interaction.reply(`List of tags: ${tagString}`);
 ```
 
-Here, you can use the `.findAll()` method to grab all the tag names. Notice that instead of having `where`, the optional field, `attributes`, is set. Setting attributes to name will let you get *only* the names of tags. If you tried to access other fields, like the tag author, you would get an error. If left blank, it will fetch *all* of the associated column data. It will not affect the results returned, but from a performance perspective, you should only grab the necessary data. If no results return, `tagString` will default to 'No tags set'.
+Here, you can use the `.findAll()` method to grab all the tag names. Notice that instead of having `where`, the optional field, `attributes`, is set. Setting attributes to name will let you get *only* the names of tags. If you tried to access other fields, like the tag author, you would get an error. If left blank, it will fetch *all* of the associated column data. It will not affect the results returned, but from a performance perspective, you should only grab the necessary data. If no results are returned, `tagString` will default to 'No tags set'.
 
 ### [mu] Deleting a tag
 
